@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class LoginController {
 
@@ -27,13 +28,18 @@ public class LoginController {
     private Button loginBtn;
 
     public Stage stage;
-    public LoginController(Stage stage) {
+    // Handles relations to the database
+    private DataBaseController databaseController;
+
+    public LoginController(Stage stage, DataBaseController dataBaseController) {
         this.stage = stage;
+        this.databaseController = dataBaseController;
     }
     @FXML
-    void login(ActionEvent event) throws IOException {
-        SectionController sectionController = new SectionController(this.stage);
+    void login(ActionEvent event) throws IOException, SQLException {
+        SectionController sectionController = new SectionController(this.stage, this.databaseController);
         sectionController.initSection();
+        databaseController.checkCredential();
     }
 
     public void initLogin() throws IOException {

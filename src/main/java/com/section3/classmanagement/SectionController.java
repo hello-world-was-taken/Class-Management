@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
@@ -11,6 +12,8 @@ import java.io.IOException;
 
 public class SectionController {
 
+    // Handles relations to the database
+    private final DataBaseController databaseController;
     @FXML
     private Label section1;
 
@@ -43,8 +46,9 @@ public class SectionController {
 
     public Stage stage;
 
-    public SectionController(Stage stage) {
+    public SectionController(Stage stage, DataBaseController dataBaseController) {
         this.stage = stage;
+        this.databaseController = dataBaseController;
     }
 
     public void initSection() throws IOException {
