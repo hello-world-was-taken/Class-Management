@@ -6,45 +6,55 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="470.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="404.0" prefWidth="130.0" style="-fx-background-color: #011a27;">
+      <AnchorPane prefHeight="470.0" prefWidth="130.0" style="-fx-background-color: #011a27;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: #011a27;" text="Teacher" textFill="#f1f1f2">
+            <Button layoutY="129.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: #011a27;" text="Teacher" textFill="#f1f1f2">
                <graphic>
                   <FontIcon iconColor="#f1f1f2" iconLiteral="fa-user-circle" iconSize="20" wrappingWidth="31.0" />
                </graphic>
             </Button>
-            <Button layoutX="-1.0" layoutY="159.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: #011a27;" text="Shield" textFill="#f1f1f2">
+            <Button layoutX="-1.0" layoutY="189.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: #011a27;" text="Admin" textFill="#f1f1f2">
                <graphic>
                   <FontIcon iconColor="#f1f1f2" iconLiteral="fa-shield" iconSize="20" wrappingWidth="37.2857141494751" />
                </graphic>
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="130.0" layoutY="2.0" prefHeight="400.0" prefWidth="470.0">
+      <AnchorPane layoutX="130.0" layoutY="2.0" prefHeight="460.0" prefWidth="620.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane layoutY="-2.0" prefHeight="76.0" prefWidth="470.0" style="-fx-background-color: #011A27;">
+            <AnchorPane layoutY="-2.0" prefHeight="102.0" prefWidth="620.0" style="-fx-background-color: #011A27;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label layoutX="136.0" layoutY="20.0" text="SECTIONS" textFill="#f1f1f2">
+                  <Label layoutX="211.0" layoutY="33.0" text="SCHEDULE" textFill="#f1f1f2">
                      <font>
                         <Font name="Elephant" size="29.0" />
                      </font>
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutY="74.0" prefHeight="328.0" prefWidth="470.0">
+            <AnchorPane layoutX="-11.0" layoutY="100.0" prefHeight="360.0" prefWidth="631.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
                <children>
-                  <Label fx:id="section1" layoutX="20.0" layoutY="56.0" text="Label" />
-                  <Label fx:id="section6" layoutX="20.0" layoutY="210.0" text="Label" />
-                  <Label fx:id="section2" layoutX="118.0" layoutY="56.0" text="Label" />
-                  <Label fx:id="section7" layoutX="118.0" layoutY="210.0" text="Label" />
-                  <Label fx:id="section3" layoutX="221.0" layoutY="56.0" text="Label" />
-                  <Label fx:id="section8" layoutX="221.0" layoutY="210.0" text="Label" />
-                  <Label fx:id="section4" layoutX="333.0" layoutY="56.0" text="Label" />
-                  <Label fx:id="section9" layoutX="333.0" layoutY="210.0" text="Label" />
-                  <Label fx:id="section5" layoutX="416.0" layoutY="56.0" text="Label" />
-                  <Label fx:id="section10" layoutX="416.0" layoutY="210.0" text="Label" />
+                  <Button layoutX="36.0" layoutY="47.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="36.0" layoutY="128.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="36.0" layoutY="202.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="36.0" layoutY="284.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="163.0" layoutY="46.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="163.0" layoutY="127.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="163.0" layoutY="201.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="163.0" layoutY="283.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="301.0" layoutY="47.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="301.0" layoutY="128.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="301.0" layoutY="202.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="301.0" layoutY="284.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="426.0" layoutY="46.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="426.0" layoutY="127.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="426.0" layoutY="201.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="426.0" layoutY="283.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="534.0" layoutY="46.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="534.0" layoutY="127.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="534.0" layoutY="201.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="534.0" layoutY="283.0" mnemonicParsing="false" text="Button" />
                </children>
             </AnchorPane>
          </children>

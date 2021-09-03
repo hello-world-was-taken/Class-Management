@@ -2,8 +2,9 @@ package com.section3.classmanagement;
 
 import java.sql.*;
 public class DataBaseController {
+    
 
-    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/haile", "root", "root");
+    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/haile", "root", "");
     Statement statement = connection.createStatement();
     ResultSet resultSet = null;
     public DataBaseController() throws SQLException {
