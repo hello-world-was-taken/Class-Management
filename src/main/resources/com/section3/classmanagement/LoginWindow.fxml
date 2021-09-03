@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #011a27;">
+            <children>
+                <Label layoutX="136.0" layoutY="192.0" />
+                <FontIcon iconColor="#f1f1f2" iconLiteral="fa-lock" iconSize="100" layoutX="104.0" layoutY="229.0" />
+            </children></AnchorPane>
+        <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #f1f1f2;">
+            <children>
+                <TextField fx:id="userName" layoutX="87.0" layoutY="175.0" promptText="Username" />
+                <PasswordField fx:id="password" layoutX="87.0" layoutY="221.0" promptText="Password" />
+                <Label layoutX="33.0" layoutY="143.0" />
+                <Label layoutX="33.0" layoutY="221.0" />
+                <FontIcon iconColor="#011a27" iconLiteral="fa-user" iconSize="20" layoutX="65.0" layoutY="194.0" />
+                <FontIcon iconColor="#011a27" iconLiteral="fa-key" iconSize="20" layoutX="66.0" layoutY="240.0" />
+                <Label layoutX="28.0" layoutY="48.0" style="-fx-font-size: 40;" text="CREDENTIALS" textFill="#011a27" />
+                <Button fx:id="loginBtn" layoutX="87.0" layoutY="279.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #011a27;" text="Login" textFill="#f1f1f2" />
+            </children></AnchorPane>
+        <Text fill="#011a27" layoutX="146.0" layoutY="-33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Password" />
+        <Text fill="#011a27" layoutX="231.0" layoutY="-33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bolder;" text="Username" />
+    </children>
+</AnchorPane>

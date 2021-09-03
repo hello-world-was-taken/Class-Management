@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="464.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="464.0" prefWidth="130.0" style="-fx-background-color: #011a27;">
+         <children>
+            <Button layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: #011a27;" text="Teacher" textFill="#f1f1f2">
+               <graphic>
+                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-user-circle" iconSize="20" wrappingWidth="31.0" />
+               </graphic>
+            </Button>
+            <Button layoutX="-1.0" layoutY="159.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: #011a27;" text="Admin" textFill="#f1f1f2">
+               <graphic>
+                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-shield" iconSize="20" wrappingWidth="37.2857141494751" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="130.0" layoutY="2.0" prefHeight="400.0" prefWidth="470.0">
+         <children>
+            <AnchorPane layoutY="-2.0" prefHeight="76.0" prefWidth="584.0" style="-fx-background-color: #011A27;">
+               <children>
+                  <Label layoutX="208.0" layoutY="20.0" text="SCHEDULE" textFill="#f1f1f2">
+                     <font>
+                        <Font name="Elephant" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox layoutY="74.0" prefHeight="28.0" prefWidth="584.0" spacing="60.0" style="-fx-background-color: #011A27;">
+               <children>
+                  <Label text="Monday" textFill="#f1f1f2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Tuesday" textFill="#f1f1f2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Wednesday" textFill="#f1f1f2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Thursday" textFill="#f1f1f2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Friday" textFill="#f1f1f2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane layoutY="100.0" prefHeight="360.0" prefWidth="584.0">
+               <children>
+                  <Label fx:id="monday0" layoutX="20.0" layoutY="14.0" text="Label" />
+                  <Label fx:id="monday1" layoutX="20.0" layoutY="95.0" text="Label" />
+                  <Label fx:id="monday2" layoutX="20.0" layoutY="194.0" text="Label" />
+                  <Label fx:id="monday3" layoutX="20.0" layoutY="269.0" text="Label" />
+                  <Label fx:id="tuesday0" layoutX="130.0" layoutY="14.0" text="Label" />
+                  <Label fx:id="tuesday1" layoutX="130.0" layoutY="95.0" text="Label" />
+                  <Label fx:id="tuesday2" layoutX="130.0" layoutY="194.0" text="Label" />
+                  <Label fx:id="tuesday3" layoutX="130.0" layoutY="267.0" text="Label" />
+                  <Label fx:id="wed0" layoutX="265.0" layoutY="14.0" text="Label" />
+                  <Label fx:id="wed1" layoutX="265.0" layoutY="95.0" text="Label" />
+                  <Label fx:id="wed2" layoutX="265.0" layoutY="194.0" text="Label" />
+                  <Label fx:id="wed3" layoutX="265.0" layoutY="267.0" text="Label" />
+                  <Label fx:id="thursday0" layoutX="392.0" layoutY="14.0" text="Label" />
+                  <Label fx:id="thursday1" layoutX="392.0" layoutY="95.0" text="Label" />
+                  <Label fx:id="thursday2" layoutX="392.0" layoutY="194.0" text="Label" />
+                  <Label fx:id="thursday3" layoutX="392.0" layoutY="272.0" text="Label" />
+                  <Label fx:id="fri0" layoutX="512.0" layoutY="14.0" text="Label" />
+                  <Label fx:id="fri1" layoutX="515.0" layoutY="95.0" text="Label" />
+                  <Label fx:id="fri2" layoutX="515.0" layoutY="191.0" text="Label" />
+                  <Label fx:id="fri3" layoutX="515.0" layoutY="273.0" text="Label" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
