@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.chart.PieChart;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
@@ -56,6 +55,7 @@ public class SectionController {
         fxmlLoader.setController(this);
         Parent parent = fxmlLoader.load();
         Scene scene = new Scene(parent);
+        scene.getStylesheets().add(getClass().getResource("/com/section3/classmanagement/SectionWindowCss.css").toExternalForm());
         this.stage.setTitle("Section");
         this.stage.setScene(scene);
         this.stage.show();

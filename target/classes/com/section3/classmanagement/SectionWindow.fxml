@@ -37,27 +37,27 @@
                <children>
                   <AnchorPane layoutY="9.0" prefHeight="179.0" prefWidth="647.0">
                      <children>
-                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 1" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 1" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 2" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 2" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 3" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 3" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 4" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 4" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 5" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 5" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
@@ -66,27 +66,27 @@
                   </AnchorPane>
                   <AnchorPane layoutY="174.0" prefHeight="179.0" prefWidth="647.0">
                      <children>
-                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 6" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 6" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 7" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 7" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 8" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 8" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 9" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 9" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@../../../../java/SectionWindowCSS.css" text="Section 10" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 10" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
