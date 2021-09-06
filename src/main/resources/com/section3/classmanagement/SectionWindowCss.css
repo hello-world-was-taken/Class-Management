@@ -1,11 +1,30 @@
-.button {
+// default style of the section buttons
+.sectionBtn {
     -fx-background-color:  #011a27;
     -fx-min-height: 125px;
     -fx-min-width: 100px;
     -fx-background-radius: 15px;
 }
+// default style of the controls
+.controls {
+    -fx-background-color:  #011a27;
+}
+// Controls the hover properties of the section buttons
+.sectionBtn: hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
 
-.button: hover {
-    -fx-pref-height: 130px;
-    -fx-pref-width: 110px;
+// sets the style on hover for the controls on the left
+.controls:hover {
+    -fx-background-color: #f1f1f2;
+    -fx-background-radius: 0;
+    -fx-text-fill: #011a27 !important;
+    -fx-fill: #011a27 !important;
+}
+
+// Since the control icons are in a different group (Label), we can simply inherit the property of the parent (controls)
+.iconsControl {
+    -fx-text-fill: inherit;
+    -fx-fill: inherit;
 }

@@ -49,6 +49,7 @@ public class LoginController {
         Scene scene = new Scene(parent);
         this.stage.setTitle("Login");
         this.stage.centerOnScreen();
+        this.stage.setResizable(false);
         this.stage.setScene(scene);
         this.stage.show();
     }

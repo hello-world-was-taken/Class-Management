@@ -8,85 +8,85 @@
 
 <AnchorPane prefHeight="470.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="470.0" prefWidth="130.0" style="-fx-background-color: #011a27;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane prefHeight="470.0" prefWidth="130.0" style="-fx-background-color: #011a27;" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button layoutY="129.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: #011a27;" text="Teacher" textFill="#f1f1f2">
+            <Button layoutY="133.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Teacher" textFill="#f1f1f2">
                <graphic>
-                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-user-circle" iconSize="20" wrappingWidth="31.0" />
+                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-user-circle" iconSize="20" styleClass="iconsControl" wrappingWidth="31.0" />
                </graphic>
             </Button>
-            <Button layoutX="-1.0" layoutY="189.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: #011a27;" text="Admin" textFill="#f1f1f2">
+            <Button layoutY="189.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="137.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Admin" textFill="#f1f1f2">
                <graphic>
-                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-shield" iconSize="20" wrappingWidth="37.2857141494751" />
+                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-shield" iconSize="20" styleClass="iconsControl" wrappingWidth="37.2857141494751" />
                </graphic>
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="130.0" layoutY="2.0" prefHeight="460.0" prefWidth="620.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutX="130.0" layoutY="2.0" prefHeight="460.0" prefWidth="620.0" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane layoutY="-2.0" prefHeight="102.0" prefWidth="620.0" style="-fx-background-color: #011A27;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane layoutY="-2.0" prefHeight="102.0" prefWidth="620.0" style="-fx-background-color: #011A27;" stylesheets="@SectionWindowCss.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label layoutX="211.0" layoutY="33.0" text="SCHEDULE" textFill="#f1f1f2">
+                  <Label layoutX="211.0" layoutY="33.0" stylesheets="@SectionWindowCss.css" text="SCHEDULE" textFill="#f1f1f2">
                      <font>
                         <Font name="Elephant" size="29.0" />
                      </font>
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="-11.0" layoutY="100.0" prefHeight="371.0" prefWidth="647.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+            <AnchorPane layoutX="-11.0" layoutY="100.0" prefHeight="371.0" prefWidth="647.0" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
                <children>
-                  <AnchorPane layoutY="9.0" prefHeight="179.0" prefWidth="647.0">
+                  <AnchorPane layoutY="9.0" prefHeight="179.0" prefWidth="647.0" stylesheets="@SectionWindowCss.css">
                      <children>
-                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 1" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 1" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 2" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 2" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 3" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 3" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 4" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 4" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 5" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 5" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutY="174.0" prefHeight="179.0" prefWidth="647.0">
+                  <AnchorPane layoutY="174.0" prefHeight="179.0" prefWidth="647.0" stylesheets="@SectionWindowCss.css">
                      <children>
-                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 6" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 6" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 7" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 7" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 8" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 8" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 9" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 9" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@SectionWindowCss.css" text="Section 10" textFill="#f1f1f2">
+                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 10" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
