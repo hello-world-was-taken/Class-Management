@@ -10,8 +10,10 @@ public class ProgramStart extends Application {
     @Override
     public void start(Stage stage) throws IOException, SQLException {
         DataBaseController dataBaseController = new DataBaseController();
-        LoginController loginController = new LoginController(stage, dataBaseController);
-        loginController.initLogin();
+//        LoginController loginController = new LoginController(stage, dataBaseController);
+//        loginController.initLogin();
+        UpdateWindow updateWindow = new UpdateWindow(stage, dataBaseController);
+        updateWindow.initUpdateWindow();
     }
 
     public static void main(String[] args) {

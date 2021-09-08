@@ -8,25 +8,25 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane prefHeight="470.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="470.0" prefWidth="750.0" styleClass="darkBlue" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="470.0" prefWidth="130.0" style="-fx-background-color: #011a27;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane prefHeight="470.0" prefWidth="130.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button layoutY="129.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: #011a27;" text="Teacher" textFill="#f1f1f2">
+            <Button layoutY="142.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Teacher" textFill="#f1f1f2">
                <graphic>
-                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-user-circle" iconSize="20" wrappingWidth="31.0" />
+                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-user-circle" iconSize="20" styleClass="iconsControl" wrappingWidth="31.0" />
                </graphic>
             </Button>
-            <Button layoutX="-1.0" layoutY="189.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: #011a27;" text="Admin" textFill="#f1f1f2">
+            <Button layoutY="193.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Admin" textFill="#f1f1f2">
                <graphic>
-                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-shield" iconSize="20" wrappingWidth="37.2857141494751" />
+                  <FontIcon iconColor="#f1f1f2" iconLiteral="fa-shield" iconSize="20" styleClass="iconsControl" wrappingWidth="37.2857141494751" />
                </graphic>
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="130.0" layoutY="2.0" prefHeight="460.0" prefWidth="620.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutX="130.0" layoutY="2.0" prefHeight="460.0" prefWidth="620.0" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane layoutY="-2.0" prefHeight="76.0" prefWidth="620.0" style="-fx-background-color: #011A27;" AnchorPane.bottomAnchor="384.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane layoutY="-2.0" prefHeight="76.0" prefWidth="620.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="384.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <Label layoutX="211.0" layoutY="20.0" text="SCHEDULE" textFill="#f1f1f2">
                      <font>
@@ -35,7 +35,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <HBox layoutY="74.0" prefHeight="28.0" prefWidth="620.0" spacing="60.0" style="-fx-background-color: #011A27;" AnchorPane.bottomAnchor="368.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+            <HBox layoutY="74.0" prefHeight="28.0" prefWidth="620.0" spacing="60.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="368.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
                <children>
                   <Label prefHeight="21.0" prefWidth="66.0" text="Monday" textFill="#f1f1f2">
                      <font>
@@ -69,26 +69,26 @@
             </HBox>
             <AnchorPane layoutX="-11.0" layoutY="100.0" prefHeight="360.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
                <children>
-                  <Button layoutX="36.0" layoutY="47.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="36.0" layoutY="128.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="36.0" layoutY="202.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="36.0" layoutY="284.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="163.0" layoutY="46.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="163.0" layoutY="127.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="163.0" layoutY="201.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="163.0" layoutY="283.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="301.0" layoutY="47.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="301.0" layoutY="128.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="301.0" layoutY="202.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="301.0" layoutY="284.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="426.0" layoutY="46.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="426.0" layoutY="127.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="426.0" layoutY="201.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="426.0" layoutY="283.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="534.0" layoutY="46.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="534.0" layoutY="127.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="534.0" layoutY="201.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="534.0" layoutY="283.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="36.0" layoutY="47.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="36.0" layoutY="128.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="36.0" layoutY="202.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="36.0" layoutY="284.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="163.0" layoutY="46.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="163.0" layoutY="127.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="163.0" layoutY="201.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="163.0" layoutY="283.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="301.0" layoutY="47.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="301.0" layoutY="128.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="301.0" layoutY="202.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="301.0" layoutY="284.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="426.0" layoutY="46.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="426.0" layoutY="127.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="426.0" layoutY="201.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="426.0" layoutY="283.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="534.0" layoutY="46.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="534.0" layoutY="127.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="534.0" layoutY="201.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button layoutX="534.0" layoutY="283.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
                </children>
             </AnchorPane>
          </children>

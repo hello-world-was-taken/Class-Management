@@ -28,3 +28,13 @@
     -fx-text-fill: inherit;
     -fx-fill: inherit;
 }
+
+// Background color darkBlue
+.darkBlue {
+    -fx-background-color: #011a27;
+}
+
+// Background color lightGrey
+.lightGrey {
+    -fx-background-color: #f1f1f2;
+}
