@@ -12,12 +12,12 @@
    <children>
       <AnchorPane prefHeight="470.0" prefWidth="130.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button layoutY="142.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Teacher" textFill="#f1f1f2">
+            <Button layoutY="142.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Teacher" textFill="#f1f1f2" AnchorPane.topAnchor="140.0">
                <graphic>
                   <FontIcon iconColor="#f1f1f2" iconLiteral="fa-user-circle" iconSize="20" styleClass="iconsControl" wrappingWidth="31.0" />
                </graphic>
             </Button>
-            <Button layoutY="193.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Admin" textFill="#f1f1f2">
+            <Button layoutY="193.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Admin" textFill="#f1f1f2" AnchorPane.topAnchor="200.0">
                <graphic>
                   <FontIcon iconColor="#f1f1f2" iconLiteral="fa-shield" iconSize="20" styleClass="iconsControl" wrappingWidth="37.2857141494751" />
                </graphic>
@@ -28,7 +28,7 @@
          <children>
             <AnchorPane layoutY="-2.0" prefHeight="76.0" prefWidth="620.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="384.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label layoutX="211.0" layoutY="20.0" text="SCHEDULE" textFill="#f1f1f2">
+                  <Label layoutX="211.0" layoutY="20.0" text="Section Name" textFill="#f1f1f2">
                      <font>
                         <Font name="Elephant" size="29.0" />
                      </font>
@@ -90,6 +90,7 @@
                   <Button layoutX="534.0" layoutY="201.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
                   <Button layoutX="534.0" layoutY="283.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
                   <Button fx:id="backBtn" layoutX="560.0" layoutY="331.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="52.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" text="Back" textFill="#f1f1f2" />
+                  <Button fx:id="editBtn" layoutX="489.0" layoutY="331.0" mnemonicParsing="false" onAction="#editSchedule" prefHeight="25.0" prefWidth="52.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" text="Edit" textFill="#f1f1f2" />
                </children>
             </AnchorPane>
          </children>

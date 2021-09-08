@@ -1,18 +1,16 @@
 package com.section3.classmanagement;
 
 import javafx.fxml.FXML;
-import javafx.geometry.Rectangle2D;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ScheduleController {
+public class ScheduleWindowController {
 
     public DataBaseController dataBaseController;
     // back button for the schedule window
@@ -83,14 +81,8 @@ public class ScheduleController {
     @FXML
     private Button editBtn;
 
-    // Checks different SQL related things in order to be able to edit the schedule
-    @FXML
-    void editSchedule() {
-
-    }
-
     public Stage stage;
-    public ScheduleController(Stage stage, DataBaseController dataBaseController) {
+    public ScheduleWindowController(Stage stage, DataBaseController dataBaseController) {
 
         this.stage = stage;
         this.dataBaseController = dataBaseController;
@@ -98,7 +90,7 @@ public class ScheduleController {
 
     public void initSchedule() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ScheduleWindow.fxml"));
-        ScheduleController scheduleController;
+        ScheduleWindowController scheduleController;
         fxmlLoader.setController(this);
         Parent parent = fxmlLoader.load();
         Scene scene = new Scene(parent);
@@ -115,8 +107,15 @@ public class ScheduleController {
     // handles back button when pressed by going back to the section window.
     @FXML
     void goBack() throws IOException {
-        SectionController sectionController = new SectionController(stage, dataBaseController);
+        SectionWindowController sectionController = new SectionWindowController(stage, dataBaseController);
         sectionController.initSection();
+    }
+
+    // Checks different SQL related things in order to be able to edit the schedule
+    @FXML
+    void editSchedule() throws IOException {
+        LoginWindowController loginWindowController = new LoginWindowController(stage, dataBaseController);
+        loginWindowController.initLogin();
     }
 
 }

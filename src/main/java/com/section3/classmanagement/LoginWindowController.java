@@ -8,16 +8,18 @@ import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class LoginController {
+public class LoginWindowController {
 
+    Stage ownerStage;
     String cUsername, cPassword;
 
-//    public Stage stage = new Stage();
+    public Stage stage = new Stage();
     @FXML
     private TextField userName;
 
@@ -27,17 +29,17 @@ public class LoginController {
     @FXML
     private Button loginBtn;
 
-    public Stage stage;
+//    public Stage stage;
     // Handles relations to the database
     private DataBaseController databaseController;
 
-    public LoginController(Stage stage, DataBaseController dataBaseController) {
-        this.stage = stage;
+    public LoginWindowController(Stage ownerStage, DataBaseController dataBaseController) {
+        this.ownerStage = stage;
         this.databaseController = dataBaseController;
     }
     @FXML
     void login(ActionEvent event) throws IOException, SQLException {
-        SectionController sectionController = new SectionController(this.stage, this.databaseController);
+        SectionWindowController sectionController = new SectionWindowController(this.stage, this.databaseController);
         sectionController.initSection();
         databaseController.checkCredential();
     }
@@ -51,8 +53,10 @@ public class LoginController {
         this.stage.centerOnScreen();
         this.stage.setResizable(false);
         this.stage.setScene(scene);
-        this.stage.show();
+        this.stage.initModality(Modality.APPLICATION_MODAL);
+        this.stage.showAndWait();
+        this.stage.initOwner(this.ownerStage);
+        // need to address the stages once this stage has been initialized.
     }
-
 
 }

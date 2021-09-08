@@ -1,51 +1,54 @@
 package com.section3.classmanagement;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class SectionController {
+public class SectionWindowController {
 
     // Handles relations to the database
     public DataBaseController dataBaseController;
+
+    // might be a good idea to put these sections in an ArrayList
     @FXML
-    private Label section1;
+    private Button section1;
 
     @FXML
-    private Label section6;
+    private Button section6;
 
     @FXML
-    private Label section2;
+    private Button section2;
 
     @FXML
-    private Label section7;
+    private Button section7;
 
     @FXML
-    private Label section3;
+    private Button section3;
 
     @FXML
-    private Label section8;
+    private Button section8;
 
     @FXML
-    private Label section4;
+    private Button section4;
 
     @FXML
-    private Label section9;
+    private Button section9;
 
     @FXML
-    private Label section5;
+    private Button section5;
 
     @FXML
-    private Label section10;
+    private Button section10;
 
     public Stage stage;
 
-    public SectionController(Stage stage, DataBaseController dataBaseController) {
+    public SectionWindowController(Stage stage, DataBaseController dataBaseController) {
         this.stage = stage;
         this.dataBaseController = dataBaseController;
     }
@@ -59,6 +62,13 @@ public class SectionController {
         this.stage.setTitle("Section");
         this.stage.setScene(scene);
         this.stage.show();
+    }
+
+    // Handle actions taken when the different sections are pressed.
+    @FXML
+    void sectionBtn(ActionEvent event) throws IOException{
+        ScheduleWindowController scheduleController = new ScheduleWindowController(stage, dataBaseController);
+        scheduleController.initSchedule();
     }
 
 }

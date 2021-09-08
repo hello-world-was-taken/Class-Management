@@ -10,12 +10,12 @@
    <children>
       <AnchorPane prefHeight="470.0" prefWidth="130.0" style="-fx-background-color: #011a27;" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button layoutY="133.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Teacher" textFill="#f1f1f2">
+            <Button layoutY="138.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Teacher" textFill="#f1f1f2" AnchorPane.topAnchor="140.0">
                <graphic>
                   <FontIcon iconColor="#f1f1f2" iconLiteral="fa-user-circle" iconSize="20" styleClass="iconsControl" wrappingWidth="31.0" />
                </graphic>
             </Button>
-            <Button layoutY="189.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="137.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Admin" textFill="#f1f1f2">
+            <Button layoutY="189.0" maxWidth="130.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="137.0" styleClass="controls" stylesheets="@SectionWindowCss.css" text="Admin" textFill="#f1f1f2" AnchorPane.topAnchor="200.0">
                <graphic>
                   <FontIcon iconColor="#f1f1f2" iconLiteral="fa-shield" iconSize="20" styleClass="iconsControl" wrappingWidth="37.2857141494751" />
                </graphic>
@@ -37,27 +37,27 @@
                <children>
                   <AnchorPane layoutY="9.0" prefHeight="179.0" prefWidth="647.0" stylesheets="@SectionWindowCss.css">
                      <children>
-                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 1" textFill="#f1f1f2">
+                        <Button fx:id="section1" alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 1" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 2" textFill="#f1f1f2">
+                        <Button fx:id="section2" alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 2" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 3" textFill="#f1f1f2">
+                        <Button fx:id="section3" alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 3" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 4" textFill="#f1f1f2">
+                        <Button fx:id="section4" alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 4" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 5" textFill="#f1f1f2">
+                        <Button fx:id="section5" alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 5" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
@@ -66,27 +66,27 @@
                   </AnchorPane>
                   <AnchorPane layoutY="174.0" prefHeight="179.0" prefWidth="647.0" stylesheets="@SectionWindowCss.css">
                      <children>
-                        <Button alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 6" textFill="#f1f1f2">
+                        <Button fx:id="section6" alignment="CENTER" layoutX="61.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 6" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 7" textFill="#f1f1f2">
+                        <Button fx:id="section7" alignment="CENTER" layoutX="174.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 7" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 8" textFill="#f1f1f2">
+                        <Button fx:id="section8" alignment="CENTER" layoutX="288.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 8" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 9" textFill="#f1f1f2">
+                        <Button fx:id="section9" alignment="CENTER" layoutX="402.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 9" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 10" textFill="#f1f1f2">
+                        <Button fx:id="section10" alignment="CENTER" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" onAction="#sectionBtn" styleClass="sectionBtn" stylesheets="@SectionWindowCss.css" text="Section 10" textFill="#f1f1f2">
                            <font>
                               <Font name="System Bold Italic" size="17.0" />
                            </font>

@@ -10,7 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 
-public class UpdateWindow {
+public class UpdateWindowController {
 
     public DataBaseController databaseController;
     public Stage stage;
@@ -32,7 +32,7 @@ public class UpdateWindow {
     @FXML // fx:id="commitBtn"
     private Button commitBtn; // Value injected by FXMLLoader
 
-    public UpdateWindow(Stage stage, DataBaseController dataBaseController) {
+    public UpdateWindowController(Stage stage, DataBaseController dataBaseController) {
         this.stage = stage;
         this.databaseController = dataBaseController;
     }
