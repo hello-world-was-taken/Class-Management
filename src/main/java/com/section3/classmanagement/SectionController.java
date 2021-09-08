@@ -12,7 +12,7 @@ import java.io.IOException;
 public class SectionController {
 
     // Handles relations to the database
-    private final DataBaseController databaseController;
+    public DataBaseController dataBaseController;
     @FXML
     private Label section1;
 
@@ -47,7 +47,7 @@ public class SectionController {
 
     public SectionController(Stage stage, DataBaseController dataBaseController) {
         this.stage = stage;
-        this.databaseController = dataBaseController;
+        this.dataBaseController = dataBaseController;
     }
 
     public void initSection() throws IOException {

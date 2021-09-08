@@ -2,6 +2,7 @@ package com.section3.classmanagement;
 
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,6 +13,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class ScheduleController {
+
+    public DataBaseController dataBaseController;
+    // back button for the schedule window
+    @FXML
+    private Button backBtn;
 
     @FXML
     private Label monday0;
@@ -73,13 +79,26 @@ public class ScheduleController {
     @FXML
     private Label fri3;
 
+    // I don't see the use for this btn yet. Might get deleted.
+    @FXML
+    private Button editBtn;
+
+    // Checks different SQL related things in order to be able to edit the schedule
+    @FXML
+    void editSchedule() {
+
+    }
+
     public Stage stage;
-    public ScheduleController(Stage stage) {
+    public ScheduleController(Stage stage, DataBaseController dataBaseController) {
+
         this.stage = stage;
+        this.dataBaseController = dataBaseController;
     }
 
     public void initSchedule() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ScheduleWindow.fxml"));
+        ScheduleController scheduleController;
         fxmlLoader.setController(this);
         Parent parent = fxmlLoader.load();
         Scene scene = new Scene(parent);
@@ -91,6 +110,13 @@ public class ScheduleController {
 
         this.stage.setScene(scene);
         this.stage.show();
+    }
+
+    // handles back button when pressed by going back to the section window.
+    @FXML
+    void goBack() throws IOException {
+        SectionController sectionController = new SectionController(stage, dataBaseController);
+        sectionController.initSection();
     }
 
 }

@@ -89,6 +89,8 @@
                   <Button layoutX="534.0" layoutY="127.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
                   <Button layoutX="534.0" layoutY="201.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
                   <Button layoutX="534.0" layoutY="283.0" mnemonicParsing="false" styleClass="scheduleBtn" text="Button" />
+                  <Button fx:id="backBtn" layoutX="560.0" layoutY="331.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="52.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" text="Back" textFill="#f1f1f2" />
+                  <Button fx:id="editBtn" layoutX="489.0" layoutY="331.0" mnemonicParsing="false" onAction="#editSchedule" prefHeight="25.0" prefWidth="52.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" text="Edit" textFill="#f1f1f2" />
                </children>
             </AnchorPane>
          </children>

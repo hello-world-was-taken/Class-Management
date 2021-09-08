@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="130.0" maxWidth="440.0" prefHeight="130.0" prefWidth="440.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="180.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css">

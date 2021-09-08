@@ -12,8 +12,12 @@ public class ProgramStart extends Application {
         DataBaseController dataBaseController = new DataBaseController();
 //        LoginController loginController = new LoginController(stage, dataBaseController);
 //        loginController.initLogin();
-        UpdateWindow updateWindow = new UpdateWindow(stage, dataBaseController);
-        updateWindow.initUpdateWindow();
+//        UpdateWindow updateWindow = new UpdateWindow(stage, dataBaseController);
+//        updateWindow.initUpdateWindow();
+//        ScheduleController scheduleController = new ScheduleController(stage, dataBaseController);
+//        scheduleController.initSchedule();
+        SectionController sectionController = new SectionController(stage, dataBaseController);
+        sectionController.initSection();
     }
 
     public static void main(String[] args) {
