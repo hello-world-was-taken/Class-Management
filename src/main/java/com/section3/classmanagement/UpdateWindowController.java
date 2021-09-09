@@ -42,7 +42,8 @@ public class UpdateWindowController {
         fxmlLoader.setController(this);
         Parent parent = fxmlLoader.load();
         Scene scene = new Scene(parent);
-        scene.getStylesheets().add(getClass().getResource("/com/section3/classmanagement/SectionWindowCss.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource(
+                "/com/section3/classmanagement/SectionWindowCss.css").toExternalForm());
         this.stage.setTitle("Section");
         this.stage.setScene(scene);
         this.stage.show();

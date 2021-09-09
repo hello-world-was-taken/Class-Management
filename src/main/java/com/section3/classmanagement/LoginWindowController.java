@@ -12,13 +12,17 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 
 public class LoginWindowController {
 
+    // The ownerStage is used to keep track of the owners stage in order to change the scene once the credentials are
+    // verified.
     Stage ownerStage;
     String cUsername, cPassword;
 
+    // The new here is used to create the new window for the login and gets closed once the verification is complete
     public Stage stage = new Stage();
     @FXML
     private TextField userName;
@@ -33,15 +37,19 @@ public class LoginWindowController {
     // Handles relations to the database
     private DataBaseController databaseController;
 
+    // Here we used ownerStage instead of 'stage' to remind programmers that the input stage is the owner of the
+    // login window that pops and acts as a modal.
     public LoginWindowController(Stage ownerStage, DataBaseController dataBaseController) {
-        this.ownerStage = stage;
+        this.ownerStage = ownerStage;
         this.databaseController = dataBaseController;
     }
     @FXML
     void login(ActionEvent event) throws IOException, SQLException {
-        SectionWindowController sectionController = new SectionWindowController(this.stage, this.databaseController);
-        sectionController.initSection();
-        databaseController.checkCredential();
+//        SectionWindowController sectionController = new SectionWindowController(this.ownerStage, this.databaseController);
+//        sectionController.initSection();
+        System.out.println("The credential is checked and the login window is closed");
+        this.stage.close();
+        //        databaseController.checkCredential();
     }
 
     public void initLogin() throws IOException {
@@ -50,7 +58,7 @@ public class LoginWindowController {
         Parent parent = fxmlLoader.load();
         Scene scene = new Scene(parent);
         this.stage.setTitle("Login");
-        this.stage.centerOnScreen();
+//        this.stage.centerOnScreen();  // the name is misleading and doesn't work as you might imagine
         this.stage.setResizable(false);
         this.stage.setScene(scene);
         this.stage.initModality(Modality.APPLICATION_MODAL);

@@ -95,11 +95,6 @@ public class ScheduleWindowController {
         Parent parent = fxmlLoader.load();
         Scene scene = new Scene(parent);
         this.stage.setTitle("Schedule");
-//         Centering the stage
-//        Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
-//        this.stage.setX((primScreenBounds.getWidth() - this.stage.getScene().getWidth()) / 2);
-//        this.stage.setY((primScreenBounds.getHeight() - this.stage.getScene().getHeight()) / 2);
-
         this.stage.setScene(scene);
         this.stage.show();
     }
