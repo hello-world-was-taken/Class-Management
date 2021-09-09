@@ -49,4 +49,11 @@ public class UpdateWindowController {
         this.stage.show();
     }
 
+    // Handle actions related to the commit button
+    @FXML
+    void commitBtn() {
+        this.stage.close();
+    }
+
+
 }

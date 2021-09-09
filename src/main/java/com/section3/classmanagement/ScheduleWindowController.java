@@ -110,7 +110,7 @@ public class ScheduleWindowController {
     // Checks different SQL related things in order to be able to edit the schedule
     @FXML
     void editSchedule() throws IOException {
-        LoginWindowController loginWindowController = new LoginWindowController(stage, dataBaseController);
+        LoginWindowController loginWindowController = new LoginWindowController(stage, new Stage(),dataBaseController);
         loginWindowController.initLogin();
     }
 
@@ -118,8 +118,7 @@ public class ScheduleWindowController {
     // Don't forget to use the action events to get the source and update it accordingly
     @FXML
     void scheduleBtn(ActionEvent event) throws  IOException{
-        Stage stage = new Stage();
-        UpdateWindowController updateWindowController = new UpdateWindowController(stage, this.dataBaseController);
+        UpdateWindowController updateWindowController = new UpdateWindowController(new Stage(), this.dataBaseController);
         updateWindowController.initUpdateWindow();
     }
 

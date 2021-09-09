@@ -19,11 +19,11 @@ public class LoginWindowController {
 
     // The ownerStage is used to keep track of the owners stage in order to change the scene once the credentials are
     // verified.
-    Stage ownerStage;
+    private Stage ownerStage;
     String cUsername, cPassword;
 
     // The new here is used to create the new window for the login and gets closed once the verification is complete
-    public Stage stage = new Stage();
+    private Stage stage;
     @FXML
     private TextField userName;
 
@@ -37,9 +37,10 @@ public class LoginWindowController {
     private DataBaseController databaseController;
 
     // Here we used ownerStage instead of 'stage' to remind programmers that the input stage is the owner of the
-    // login window that pops and acts as a modal.
-    public LoginWindowController(Stage ownerStage, DataBaseController dataBaseController) {
+    // login window that pops and acts as a modal. And the one named 'stage' is the stage the login is being displayed on.
+    public LoginWindowController(Stage ownerStage, Stage stage, DataBaseController dataBaseController) {
         this.ownerStage = ownerStage;
+        this.stage = stage;
         this.databaseController = dataBaseController;
     }
     @FXML

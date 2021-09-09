@@ -39,7 +39,7 @@
             <ComboBox fx:id="startMinComboBox" layoutX="63.0" layoutY="91.0" prefHeight="25.0" prefWidth="59.0" promptText="00" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
             <ComboBox fx:id="EndHourComboBox" layoutX="133.0" layoutY="91.0" prefHeight="25.0" prefWidth="42.0" promptText="2" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
             <ComboBox fx:id="endMinComboBox" layoutX="189.0" layoutY="91.0" prefHeight="25.0" prefWidth="59.0" promptText="00" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
-            <Button fx:id="commitBtn" layoutX="175.0" layoutY="161.0" mnemonicParsing="false" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" text="Commit" />
+            <Button fx:id="commitBtn" layoutX="175.0" layoutY="161.0" mnemonicParsing="false" onAction="#commitBtn" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" text="Commit" />
          </children>
       </AnchorPane>
    </children>
