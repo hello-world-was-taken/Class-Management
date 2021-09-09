@@ -1,5 +1,6 @@
 package com.section3.classmanagement;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -111,6 +112,15 @@ public class ScheduleWindowController {
     void editSchedule() throws IOException {
         LoginWindowController loginWindowController = new LoginWindowController(stage, dataBaseController);
         loginWindowController.initLogin();
+    }
+
+    // Handle actions related to the schedule buttons
+    // Don't forget to use the action events to get the source and update it accordingly
+    @FXML
+    void scheduleBtn(ActionEvent event) throws  IOException{
+        Stage stage = new Stage();
+        UpdateWindowController updateWindowController = new UpdateWindowController(stage, this.dataBaseController);
+        updateWindowController.initUpdateWindow();
     }
 
 }

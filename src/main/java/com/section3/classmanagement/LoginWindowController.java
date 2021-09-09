@@ -33,7 +33,6 @@ public class LoginWindowController {
     @FXML
     private Button loginBtn;
 
-//    public Stage stage;
     // Handles relations to the database
     private DataBaseController databaseController;
 
