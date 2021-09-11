@@ -122,6 +122,12 @@ public class ScheduleWindowController {
         updateWindowController.initUpdateWindow();
     }
 
+    // Closes the current stage
+    @FXML
+    void closeStage(ActionEvent event) {
+        this.stage.close();
+    }
+
 }
 
 

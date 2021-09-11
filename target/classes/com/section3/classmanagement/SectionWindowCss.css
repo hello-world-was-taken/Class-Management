@@ -38,3 +38,16 @@
 .lightGrey {
     -fx-background-color: #f1f1f2;
 }
+.stageControl {
+    -fx-background-color: #011a27;
+    -fx-background-radius: 0;
+    -fx-text-fill: #f1f1f2 !important;
+    -fx-fill:#f1f1f2 !important;
+    -fx-padding: 10;
+}
+
+.stageControl: hover {
+    -fx-background-color: #f1f1f2;
+    -fx-text-fill: #011a27 !important;;
+    -fx-fill: #011a27 !important;;
+}

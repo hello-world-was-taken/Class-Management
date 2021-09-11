@@ -31,6 +31,16 @@
                         <Font name="Elephant" size="29.0" />
                      </font>
                   </Label>
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="610.0" layoutY="1.0" maxHeight="40.0" maxWidth="40.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#closeStage" styleClass="stageControl" stylesheets="@SectionWindowCss.css" text="Button">
+                     <graphic>
+                        <FontIcon iconLiteral="fa-times" iconSize="20" styleClass="iconsControl" />
+                     </graphic>
+                  </Button>
+                  <Button alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="566.0" layoutY="1.0" maxHeight="40.0" maxWidth="40.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" styleClass="stageControl" stylesheets="@SectionWindowCss.css" text="Button">
+                     <graphic>
+                        <FontIcon iconLiteral="fa-window-minimize" iconSize="20" styleClass="iconsControl" />
+                     </graphic>
+                  </Button>
                </children>
             </AnchorPane>
             <AnchorPane layoutX="-11.0" layoutY="100.0" prefHeight="371.0" prefWidth="647.0" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">

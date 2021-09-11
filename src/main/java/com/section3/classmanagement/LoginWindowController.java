@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -35,11 +36,11 @@ public class LoginWindowController {
     // Handles relations to the database
     private DataBaseController databaseController = null;
 
-    // Here we used ownerStage instead of 'stage' to remind programmers that the input stage is the owner of the
-    // login window that pops and acts as a modal. And the one named 'stage' is the stage the login is being displayed on.
+    // Here the input stage is a newly initialized stage (from the ScheduleWindowController)
     public LoginWindowController(Stage stage, DataBaseController dataBaseController) {
 //        this.ownerStage = ownerStage;
         this.stage = stage;
+        this.stage.initStyle(StageStyle.UNDECORATED);
         this.databaseController = dataBaseController;
     }
     @FXML
@@ -47,6 +48,12 @@ public class LoginWindowController {
         System.out.println("The credential is checked and the login window is closed");
         this.stage.close();
         //        databaseController.checkCredential();
+    }
+
+    // Closes the current stage
+    @FXML
+    void closeStage(ActionEvent event) {
+        this.stage.close();
     }
 
     public void initLogin() throws IOException {

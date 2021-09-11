@@ -5,8 +5,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane maxHeight="130.0" maxWidth="440.0" prefHeight="130.0" prefWidth="440.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="200.0" maxWidth="479.0" prefHeight="200.0" prefWidth="479.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="180.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css">
          <children>
@@ -20,27 +21,37 @@
       </AnchorPane>
       <AnchorPane layoutX="183.0" prefHeight="200.0" prefWidth="250.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css">
          <children>
-            <ComboBox fx:id="startHourComboBox" layoutX="7.0" layoutY="91.0" prefHeight="25.0" prefWidth="25.0" promptText="2" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
-            <Label layoutX="112.0" layoutY="36.0" text="Time" textFill="#f1f1f2">
+            <ComboBox fx:id="startHourComboBox" layoutX="34.0" layoutY="91.0" prefHeight="25.0" prefWidth="25.0" promptText="2" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
+            <Label layoutX="139.0" layoutY="36.0" text="Time" textFill="#f1f1f2">
                <font>
                   <Font name="System Bold Italic" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="176.0" layoutY="64.0" text="End" textFill="#f1f1f2">
+            <Label layoutX="203.0" layoutY="64.0" text="End" textFill="#f1f1f2">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="52.0" layoutY="64.0" text="Start" textFill="#f1f1f2">
+            <Label layoutX="79.0" layoutY="64.0" text="Start" textFill="#f1f1f2">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <ComboBox fx:id="startMinComboBox" layoutX="63.0" layoutY="91.0" prefHeight="25.0" prefWidth="59.0" promptText="00" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
-            <ComboBox fx:id="EndHourComboBox" layoutX="133.0" layoutY="91.0" prefHeight="25.0" prefWidth="42.0" promptText="2" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
-            <ComboBox fx:id="endMinComboBox" layoutX="189.0" layoutY="91.0" prefHeight="25.0" prefWidth="59.0" promptText="00" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
-            <Button fx:id="commitBtn" layoutX="175.0" layoutY="161.0" mnemonicParsing="false" onAction="#commitBtn" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" text="Commit" />
+            <ComboBox fx:id="startMinComboBox" layoutX="90.0" layoutY="91.0" prefHeight="25.0" prefWidth="59.0" promptText="00" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
+            <ComboBox fx:id="EndHourComboBox" layoutX="160.0" layoutY="91.0" prefHeight="25.0" prefWidth="42.0" promptText="2" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
+            <ComboBox fx:id="endMinComboBox" layoutX="216.0" layoutY="91.0" prefHeight="25.0" prefWidth="59.0" promptText="00" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" />
+            <Button fx:id="commitBtn" layoutX="224.0" layoutY="161.0" mnemonicParsing="false" onAction="#commitBtn" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" text="Commit" />
          </children>
       </AnchorPane>
+      <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="442.0" layoutY="1.0" maxHeight="40.0" maxWidth="40.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#closeStage" styleClass="stageControl" stylesheets="@SectionWindowCss.css" text="Button">
+         <graphic>
+            <FontIcon iconLiteral="fa-times" iconSize="20" styleClass="iconsControl" />
+         </graphic>
+      </Button>
+      <Button alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="397.0" maxHeight="40.0" maxWidth="40.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" styleClass="stageControl" stylesheets="@SectionWindowCss.css" text="Button">
+         <graphic>
+            <FontIcon iconLiteral="fa-window-minimize" iconSize="20" styleClass="iconsControl" />
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

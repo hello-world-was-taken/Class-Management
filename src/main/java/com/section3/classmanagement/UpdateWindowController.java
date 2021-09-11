@@ -1,5 +1,6 @@
 package com.section3.classmanagement;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -9,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class UpdateWindowController {
 
@@ -32,8 +34,10 @@ public class UpdateWindowController {
     @FXML // fx:id="commitBtn"
     private Button commitBtn; // Value injected by FXMLLoader
 
+    // Here the input stage is a newly initialized stage (from the ScheduleWindowController)
     public UpdateWindowController(Stage stage, DataBaseController dataBaseController) {
         this.stage = stage;
+        this.stage.initStyle(StageStyle.UNDECORATED);
         this.databaseController = dataBaseController;
     }
 
@@ -46,12 +50,19 @@ public class UpdateWindowController {
                 "/com/section3/classmanagement/SectionWindowCss.css").toExternalForm());
         this.stage.setTitle("Schedule Update");
         this.stage.setScene(scene);
+        this.stage.initStyle(StageStyle.UNDECORATED);
         this.stage.show();
     }
 
     // Handle actions related to the commit button
     @FXML
     void commitBtn() {
+        this.stage.close();
+    }
+
+    // Closes the current stage
+    @FXML
+    void closeStage(ActionEvent event) {
         this.stage.close();
     }
 

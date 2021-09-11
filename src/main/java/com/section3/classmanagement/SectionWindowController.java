@@ -71,4 +71,10 @@ public class SectionWindowController {
         scheduleController.initSchedule();
     }
 
+    // Closes the current stage
+    @FXML
+    void closeStage(ActionEvent event) {
+        this.stage.close();
+    }
+
 }
