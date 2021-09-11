@@ -17,13 +17,12 @@ import java.sql.SQLException;
 
 public class LoginWindowController {
 
-    // The ownerStage is used to keep track of the owners stage in order to change the scene once the credentials are
-    // verified.
-    private Stage ownerStage;
+    // The owner Stage is used to create a modality with the stage initialized prior to it.
+    private final Stage ownerStage = null;
     String cUsername, cPassword;
 
     // The new here is used to create the new window for the login and gets closed once the verification is complete
-    private Stage stage;
+    private Stage stage = null;
     @FXML
     private TextField userName;
 
@@ -34,19 +33,17 @@ public class LoginWindowController {
     private Button loginBtn;
 
     // Handles relations to the database
-    private DataBaseController databaseController;
+    private DataBaseController databaseController = null;
 
     // Here we used ownerStage instead of 'stage' to remind programmers that the input stage is the owner of the
     // login window that pops and acts as a modal. And the one named 'stage' is the stage the login is being displayed on.
-    public LoginWindowController(Stage ownerStage, Stage stage, DataBaseController dataBaseController) {
-        this.ownerStage = ownerStage;
+    public LoginWindowController(Stage stage, DataBaseController dataBaseController) {
+//        this.ownerStage = ownerStage;
         this.stage = stage;
         this.databaseController = dataBaseController;
     }
     @FXML
-    void login(ActionEvent event) throws IOException, SQLException {
-//        SectionWindowController sectionController = new SectionWindowController(this.ownerStage, this.databaseController);
-//        sectionController.initSection();
+    void login(ActionEvent event) {
         System.out.println("The credential is checked and the login window is closed");
         this.stage.close();
         //        databaseController.checkCredential();
@@ -62,8 +59,8 @@ public class LoginWindowController {
         this.stage.setResizable(false);
         this.stage.setScene(scene);
         this.stage.initModality(Modality.APPLICATION_MODAL);
+        this.stage.initOwner(this.ownerStage); // Can't be set an owner once the stage has been initialized
         this.stage.showAndWait();
-        this.stage.initOwner(this.ownerStage);
         // need to address the stages once this stage has been initialized.
     }
 

@@ -2,6 +2,7 @@ package com.section3.classmanagement;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -9,6 +10,7 @@ import java.sql.SQLException;
 public class ProgramStart extends Application {
     @Override
     public void start(Stage stage) throws IOException, SQLException {
+        stage.initStyle(StageStyle.UNDECORATED);
         DataBaseController dataBaseController = new DataBaseController();
         SectionWindowController sectionController = new SectionWindowController(stage, dataBaseController);
         sectionController.initSection();

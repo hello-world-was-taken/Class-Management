@@ -12,8 +12,8 @@ import javafx.stage.Stage;
 
 public class UpdateWindowController {
 
-    public DataBaseController databaseController;
-    public Stage stage;
+    private DataBaseController databaseController = null;
+    private Stage stage = null;
     @FXML // fx:id="dayComboBox"
     private ComboBox<String> dayComboBox; // Value injected by FXMLLoader
 
@@ -44,7 +44,7 @@ public class UpdateWindowController {
         Scene scene = new Scene(parent);
         scene.getStylesheets().add(getClass().getResource(
                 "/com/section3/classmanagement/SectionWindowCss.css").toExternalForm());
-        this.stage.setTitle("Section");
+        this.stage.setTitle("Schedule Update");
         this.stage.setScene(scene);
         this.stage.show();
     }

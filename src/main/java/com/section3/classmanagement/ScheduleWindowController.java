@@ -110,7 +110,7 @@ public class ScheduleWindowController {
     // Checks different SQL related things in order to be able to edit the schedule
     @FXML
     void editSchedule() throws IOException {
-        LoginWindowController loginWindowController = new LoginWindowController(stage, new Stage(),dataBaseController);
+        LoginWindowController loginWindowController = new LoginWindowController(new Stage(),dataBaseController);
         loginWindowController.initLogin();
     }
 
