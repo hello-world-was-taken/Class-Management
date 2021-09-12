@@ -5,6 +5,7 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
@@ -24,16 +25,20 @@
                 <FontIcon iconColor="#f1f1f2" iconLiteral="fa-key" iconSize="20" layoutX="66.0" layoutY="240.0" />
                 <Label layoutX="28.0" layoutY="48.0" style="-fx-font-size: 40;" text="CREDENTIALS" textFill="#f1f1f2" />
                 <Button fx:id="loginBtn" layoutX="87.0" layoutY="279.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="149.0" styleClass="lightGrey" stylesheets="@SectionWindowCss.css" text="Login" textFill="#011a27" />
-            <Button contentDisplay="GRAPHIC_ONLY" layoutX="263.0" maxHeight="40.0" maxWidth="40.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#closeStage" styleClass="stageControl" stylesheets="@SectionWindowCss.css" text="Button">
-               <graphic>
-                  <FontIcon iconLiteral="fa-times" iconSize="20" styleClass="iconsControl" />
-               </graphic>
-            </Button>
-            <Button contentDisplay="GRAPHIC_ONLY" layoutX="220.0" maxHeight="40.0" maxWidth="40.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" styleClass="stageControl" stylesheets="@SectionWindowCss.css" text="Button">
-               <graphic>
-                  <FontIcon iconLiteral="fa-window-minimize" iconSize="20" styleClass="iconsControl" />
-               </graphic>
-            </Button>
             </children></AnchorPane>
+      <HBox prefHeight="20.0" prefWidth="37.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" maxHeight="40.0" maxWidth="40.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" styleClass="stageControl" stylesheets="@SectionWindowCss.css" text="Button">
+               <graphic>
+                  <FontIcon iconLiteral="fa-window-minimize" iconSize="10" styleClass="iconsControl" />
+               </graphic>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" maxHeight="40.0" maxWidth="40.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#closeStage" styleClass="stageControl" stylesheets="@SectionWindowCss.css" text="Button">
+               <graphic>
+                  <FontIcon iconLiteral="fa-times" iconSize="15" styleClass="iconsControl" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
     </children>
 </AnchorPane>

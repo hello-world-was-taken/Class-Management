@@ -43,7 +43,7 @@
     -fx-background-radius: 0;
     -fx-text-fill: #f1f1f2 !important;
     -fx-fill:#f1f1f2 !important;
-    -fx-padding: 10;
+    -fx-padding: 5;
 }
 
 .stageControl: hover {
