@@ -12,7 +12,7 @@ import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class UpdateWindowController {
+public class UpdateWindowController extends BaseController{
 
     private DataBaseController databaseController = null;
     private Stage stage = null;
@@ -34,13 +34,7 @@ public class UpdateWindowController {
     @FXML // fx:id="commitBtn"
     private Button commitBtn; // Value injected by FXMLLoader
 
-    // Here the input stage is a newly initialized stage (from the ScheduleWindowController)
-    public UpdateWindowController(Stage stage, DataBaseController dataBaseController) {
-        this.stage = stage;
-        this.stage.initStyle(StageStyle.UNDECORATED);
-        this.databaseController = dataBaseController;
-    }
-
+    // Initializes the update window
     public void initUpdateWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UpdateWindow.fxml"));
         fxmlLoader.setController(this);
@@ -52,6 +46,14 @@ public class UpdateWindowController {
         this.stage.setScene(scene);
         this.stage.initStyle(StageStyle.UNDECORATED);
         this.stage.show();
+        moveStage(parent, this.stage);
+    }
+
+    // Here the input stage is a newly initialized stage (from the ScheduleWindowController)
+    public UpdateWindowController(Stage stage, DataBaseController dataBaseController) {
+        this.stage = stage;
+        this.stage.initStyle(StageStyle.UNDECORATED);
+        this.databaseController = dataBaseController;
     }
 
     // Handle actions related to the commit button

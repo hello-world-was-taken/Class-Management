@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 
-public class LoginWindowController {
+public class LoginWindowController extends BaseController{
 
     // The owner Stage is used to create a modality with the stage initialized prior to it.
     private final Stage ownerStage = null;
@@ -36,24 +36,14 @@ public class LoginWindowController {
     // Handles relations to the database
     private DataBaseController databaseController = null;
 
+    // Initializes the login window
+
     // Here the input stage is a newly initialized stage (from the ScheduleWindowController)
     public LoginWindowController(Stage stage, DataBaseController dataBaseController) {
 //        this.ownerStage = ownerStage;
         this.stage = stage;
         this.stage.initStyle(StageStyle.UNDECORATED);
         this.databaseController = dataBaseController;
-    }
-    @FXML
-    void login(ActionEvent event) {
-        System.out.println("The credential is checked and the login window is closed");
-        this.stage.close();
-        //        databaseController.checkCredential();
-    }
-
-    // Closes the current stage
-    @FXML
-    void closeStage(ActionEvent event) {
-        this.stage.close();
     }
 
     public void initLogin() throws IOException {
@@ -68,7 +58,19 @@ public class LoginWindowController {
         this.stage.initModality(Modality.APPLICATION_MODAL);
         this.stage.initOwner(this.ownerStage); // Can't be set an owner once the stage has been initialized
         this.stage.showAndWait();
-        // need to address the stages once this stage has been initialized.
+    }
+
+    @FXML
+    void login(ActionEvent event) {
+        System.out.println("The credential is checked and the login window is closed");
+        this.stage.close();
+        //        databaseController.checkCredential();
+    }
+
+    // Closes the current stage
+    @FXML
+    void closeStage(ActionEvent event) {
+        this.stage.close();
     }
 
 }

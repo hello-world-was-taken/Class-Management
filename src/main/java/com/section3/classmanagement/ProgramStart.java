@@ -14,6 +14,8 @@ public class ProgramStart extends Application {
         DataBaseController dataBaseController = new DataBaseController();
         SectionWindowController sectionController = new SectionWindowController(stage, dataBaseController);
         sectionController.initSection();
+//        LoginWindowController loginWindowController = new LoginWindowController(stage, dataBaseController);
+//        loginWindowController.initLogin();
     }
 
     public static void main(String[] args) {

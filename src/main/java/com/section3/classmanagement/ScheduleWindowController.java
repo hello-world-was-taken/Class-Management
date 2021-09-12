@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ScheduleWindowController {
+public class ScheduleWindowController extends BaseController{
 
     public DataBaseController dataBaseController;
     // back button for the schedule window
@@ -83,12 +83,8 @@ public class ScheduleWindowController {
     private Button editBtn;
 
     public Stage stage;
-    public ScheduleWindowController(Stage stage, DataBaseController dataBaseController) {
 
-        this.stage = stage;
-        this.dataBaseController = dataBaseController;
-    }
-
+    // Initializes the schedule window
     public void initSchedule() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ScheduleWindow.fxml"));
         ScheduleWindowController scheduleController;
@@ -98,6 +94,12 @@ public class ScheduleWindowController {
         this.stage.setTitle("Schedule");
         this.stage.setScene(scene);
         this.stage.show();
+        moveStage(parent, stage);
+    }
+    public ScheduleWindowController(Stage stage, DataBaseController dataBaseController) {
+
+        this.stage = stage;
+        this.dataBaseController = dataBaseController;
     }
 
     // handles back button when pressed by going back to the section window.

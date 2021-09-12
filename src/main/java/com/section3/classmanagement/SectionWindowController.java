@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class SectionWindowController {
+public class SectionWindowController extends BaseController {
 
     // Handles relations to the database
     public DataBaseController dataBaseController;
@@ -48,11 +48,7 @@ public class SectionWindowController {
 
     public Stage stage;
 
-    public SectionWindowController(Stage stage, DataBaseController dataBaseController) {
-        this.stage = stage;
-        this.dataBaseController = dataBaseController;
-    }
-
+    // Initializes the section window
     public void initSection() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SectionWindow.fxml"));
         fxmlLoader.setController(this);
@@ -62,6 +58,12 @@ public class SectionWindowController {
         this.stage.setTitle("Section");
         this.stage.setScene(scene);
         this.stage.show();
+        moveStage(parent, this.stage);
+    }
+
+    public SectionWindowController(Stage stage, DataBaseController dataBaseController) {
+        this.stage = stage;
+        this.dataBaseController = dataBaseController;
     }
 
     // Handle actions taken when the different sections are pressed.
