@@ -84,6 +84,11 @@ public class ScheduleWindowController extends BaseController{
 
     public Stage stage;
 
+    public ScheduleWindowController(Stage stage, DataBaseController dataBaseController) {
+        this.stage = stage;
+        this.dataBaseController = dataBaseController;
+    }
+
     // Initializes the schedule window
     public void initSchedule() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ScheduleWindow.fxml"));
@@ -92,14 +97,9 @@ public class ScheduleWindowController extends BaseController{
         Parent parent = fxmlLoader.load();
         Scene scene = new Scene(parent);
         this.stage.setTitle("Schedule");
-        this.stage.setScene(scene);
+        this.stage.setScene(getShadowScene(parent, scene));
         this.stage.show();
         moveStage(parent, stage);
-    }
-    public ScheduleWindowController(Stage stage, DataBaseController dataBaseController) {
-
-        this.stage = stage;
-        this.dataBaseController = dataBaseController;
     }
 
     // handles back button when pressed by going back to the section window.

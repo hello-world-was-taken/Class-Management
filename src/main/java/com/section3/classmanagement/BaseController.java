@@ -1,8 +1,13 @@
 package com.section3.classmanagement;
 
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class BaseController {
@@ -30,5 +35,22 @@ public class BaseController {
             }
         });
 
+    }
+
+    // Returns a scene with a drop shadow for UNDECORATED, TRANSPARENT stage.
+    public Scene getShadowScene(Parent parent, Scene scene) {
+        AnchorPane outerAnchorPane = new AnchorPane();
+        outerAnchorPane.getChildren().add( parent );
+        outerAnchorPane.setPadding(new Insets(10.0d));
+        outerAnchorPane.setBackground( new Background(new BackgroundFill( Color.rgb(0,0,0,0), new CornerRadii(0), new
+                Insets(0))));
+
+        parent.setEffect(new DropShadow());
+        ((AnchorPane)parent).setBackground( new Background(new BackgroundFill( Color.WHITE, new CornerRadii(0), new Insets(0)
+        )));
+
+        scene = new Scene(outerAnchorPane);
+        scene.setFill( Color.rgb(0,255,0,0) );
+        return scene;
     }
 }

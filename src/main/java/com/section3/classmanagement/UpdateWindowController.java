@@ -34,6 +34,14 @@ public class UpdateWindowController extends BaseController{
     @FXML // fx:id="commitBtn"
     private Button commitBtn; // Value injected by FXMLLoader
 
+    // Here the input stage is a newly initialized stage (from the ScheduleWindowController)
+    public UpdateWindowController(Stage stage, DataBaseController dataBaseController) {
+        this.stage = stage;
+        this.stage.initStyle(StageStyle.UNDECORATED);
+        this.stage.initStyle(StageStyle.TRANSPARENT);
+        this.databaseController = dataBaseController;
+    }
+
     // Initializes the update window
     public void initUpdateWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UpdateWindow.fxml"));
@@ -43,17 +51,10 @@ public class UpdateWindowController extends BaseController{
         scene.getStylesheets().add(getClass().getResource(
                 "/com/section3/classmanagement/SectionWindowCss.css").toExternalForm());
         this.stage.setTitle("Schedule Update");
-        this.stage.setScene(scene);
-        this.stage.initStyle(StageStyle.UNDECORATED);
+        this.stage.setScene(getShadowScene(parent, scene));
+//        this.stage.initStyle(StageStyle.UNDECORATED);
         this.stage.show();
         moveStage(parent, this.stage);
-    }
-
-    // Here the input stage is a newly initialized stage (from the ScheduleWindowController)
-    public UpdateWindowController(Stage stage, DataBaseController dataBaseController) {
-        this.stage = stage;
-        this.stage.initStyle(StageStyle.UNDECORATED);
-        this.databaseController = dataBaseController;
     }
 
     // Handle actions related to the commit button

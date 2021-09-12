@@ -15,6 +15,7 @@ import javafx.stage.StageStyle;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
+import java.text.NumberFormat;
 
 public class LoginWindowController extends BaseController{
 
@@ -43,6 +44,7 @@ public class LoginWindowController extends BaseController{
 //        this.ownerStage = ownerStage;
         this.stage = stage;
         this.stage.initStyle(StageStyle.UNDECORATED);
+        this.stage.initStyle(StageStyle.TRANSPARENT);
         this.databaseController = dataBaseController;
     }
 
@@ -50,11 +52,11 @@ public class LoginWindowController extends BaseController{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("LoginWindow.fxml"));
         fxmlLoader.setController(this);
         Parent parent = fxmlLoader.load();
-        Scene scene = new Scene(parent);
+        Scene scene = new Scene(parent); // no need to create this scene but for some styles.
         this.stage.setTitle("Login");
 //        this.stage.centerOnScreen();  // the name is misleading and doesn't work as you might imagine
         this.stage.setResizable(false);
-        this.stage.setScene(scene);
+        this.stage.setScene(getShadowScene(parent, scene));
         this.stage.initModality(Modality.APPLICATION_MODAL);
         this.stage.initOwner(this.ownerStage); // Can't be set an owner once the stage has been initialized
         this.stage.showAndWait();

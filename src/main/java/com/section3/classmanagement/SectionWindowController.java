@@ -53,10 +53,10 @@ public class SectionWindowController extends BaseController {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SectionWindow.fxml"));
         fxmlLoader.setController(this);
         Parent parent = fxmlLoader.load();
-        Scene scene = new Scene(parent);
+        Scene scene = new Scene(parent); // no need to create this scene but for some styles.
         scene.getStylesheets().add(getClass().getResource("/com/section3/classmanagement/SectionWindowCss.css").toExternalForm());
         this.stage.setTitle("Section");
-        this.stage.setScene(scene);
+        this.stage.setScene(getShadowScene(parent, scene));
         this.stage.show();
         moveStage(parent, this.stage);
     }
