@@ -58,7 +58,7 @@ public class LoginWindowController extends BaseController{
         this.stage.setResizable(false);
         this.stage.setScene(getShadowScene(parent, scene));
         this.stage.initModality(Modality.APPLICATION_MODAL);
-        this.stage.initOwner(this.ownerStage); // Can't be set an owner once the stage has been initialized
+        this.stage.initOwner(this.ownerStage); // Can't be set an owner once the stage has been set visible
         this.stage.showAndWait();
     }
 
