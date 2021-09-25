@@ -63,10 +63,14 @@ public class LoginWindowController extends BaseController{
     }
 
     @FXML
-    void login(ActionEvent event) {
+    void login(ActionEvent event){
         System.out.println("The credential is checked and the login window is closed");
         this.stage.close();
-        //        databaseController.checkCredential();
+        try {
+            databaseController.checkCredential();
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     // Closes the current stage
