@@ -1,5 +1,7 @@
 package com.section3.classmanagement;
 
+import javafx.scene.control.Button;
+
 import java.sql.*;
 public class DataBaseController {
     
@@ -15,11 +17,15 @@ public class DataBaseController {
 
         while(resultSet.next()) {
             String Admin_ID = resultSet.getString("Admin_ID");
-//            int password = resultSet.getInt("password");
             String Admin_Name = resultSet.getString("Admin_Name");
 
             System.out.println("Admin_ID: " + Admin_ID);
             System.out.println("Password: " + Admin_Name);
         }
+    }
+
+    // Synchronizes the  database values we get from our query with the schedule display nodes
+    public void displaySchedule(Button button) {
+
     }
 }

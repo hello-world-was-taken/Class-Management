@@ -14,73 +14,74 @@ import java.io.IOException;
 public class ScheduleWindowController extends BaseController{
 
     public DataBaseController dataBaseController;
-    // back button for the schedule window
-    @FXML
-    private Button backBtn;
 
     @FXML
-    private Label monday0;
+    private Button monday0;
 
     @FXML
-    private Label monday1;
+    private Button monday1;
 
     @FXML
-    private Label monday2;
+    private Button monday2;
 
     @FXML
-    private Label monday3;
+    private Button monday3;
 
     @FXML
-    private Label tuesday0;
+    private Button tuesday0;
 
     @FXML
-    private Label tuesday1;
+    private Button tuesday1;
 
     @FXML
-    private Label tuesday2;
+    private Button tuesday2;
 
     @FXML
-    private Label tuesday3;
+    private Button tuesday3;
 
     @FXML
-    private Label wed0;
+    private Button wednesday0;
 
     @FXML
-    private Label wed1;
+    private Button wednesday1;
 
     @FXML
-    private Label wed2;
+    private Button wednesday2;
 
     @FXML
-    private Label wed3;
+    private Button wednesday3;
 
     @FXML
-    private Label thursday0;
+    private Button thursday0;
 
     @FXML
-    private Label thursday1;
+    private Button thursday1;
 
     @FXML
-    private Label thursday2;
+    private Button thursday2;
 
     @FXML
-    private Label thursday3;
+    private Button thursday3;
 
     @FXML
-    private Label fri0;
+    private Button firday0;
 
     @FXML
-    private Label fri1;
+    private Button firday1;
 
     @FXML
-    private Label fri2;
+    private Button firday2;
 
     @FXML
-    private Label fri3;
+    private Button firday3;
 
     // I don't see the use for this btn yet. Might get deleted.
     @FXML
     private Button editBtn;
+
+    // back button for the schedule window
+    @FXML
+    private Button backBtn;
 
     public Stage stage;
 
@@ -102,7 +103,6 @@ public class ScheduleWindowController extends BaseController{
         moveStage(parent, stage);
     }
 
-    // Synchronizes the  
     // handles back button when pressed by going back to the section window.
     @FXML
     void goBack() throws IOException {
