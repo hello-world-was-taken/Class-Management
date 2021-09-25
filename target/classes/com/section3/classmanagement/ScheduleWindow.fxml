@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane prefHeight="470.0" prefWidth="750.0" styleClass="darkBlue" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="488.0" maxWidth="750.0" minHeight="470.0" minWidth="750.0" prefHeight="470.0" prefWidth="750.0" styleClass="darkBlue" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="470.0" prefWidth="130.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -67,30 +69,82 @@
                   <Insets left="20.0" />
                </padding>
             </HBox>
-            <AnchorPane layoutX="-11.0" layoutY="100.0" prefHeight="360.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+            <AnchorPane layoutX="-11.0" layoutY="100.0" maxHeight="360.0" maxWidth="631.0" minHeight="360.0" minWidth="631.0" prefHeight="360.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
                <children>
-                  <Button layoutX="36.0" layoutY="47.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="36.0" layoutY="128.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="36.0" layoutY="202.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="36.0" layoutY="284.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="163.0" layoutY="46.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="163.0" layoutY="127.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="163.0" layoutY="201.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="163.0" layoutY="283.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="301.0" layoutY="47.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="301.0" layoutY="128.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="301.0" layoutY="202.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="301.0" layoutY="284.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="426.0" layoutY="46.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="426.0" layoutY="127.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="426.0" layoutY="201.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="426.0" layoutY="283.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="534.0" layoutY="46.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="534.0" layoutY="127.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="534.0" layoutY="201.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button layoutX="534.0" layoutY="283.0" mnemonicParsing="false" onAction="#scheduleBtn" styleClass="scheduleBtn" text="Button" />
-                  <Button fx:id="backBtn" layoutX="560.0" layoutY="331.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="52.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" text="Back" textFill="#f1f1f2" />
-                  <Button fx:id="editBtn" layoutX="489.0" layoutY="331.0" mnemonicParsing="false" onAction="#editSchedule" prefHeight="25.0" prefWidth="52.0" styleClass="darkBlue" stylesheets="@SectionWindowCss.css" text="Edit" textFill="#f1f1f2" />
+                  <VBox layoutX="3.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="130.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="255.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="381.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="507.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBtn" style="-fx-min-width: 120;" styleClass="scheduleBtn" text="PlaceHolder" />
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <HBox layoutX="487.0" layoutY="315.0" prefHeight="60.0" prefWidth="40.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="backBtn" maxHeight="40.0" maxWidth="9.0" minHeight="40.0" minWidth="13.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="21.0" style="-fx-min-width: 60;" stylesheets="@SectionWindowCss.css" text="Back" textFill="#f1f1f2">
+                           <styleClass>
+                              <String fx:value="darkBlue" />
+                              <String fx:value="editBack" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="editBtn" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#editSchedule" prefHeight="40.0" prefWidth="40.0" style="-fx-min-width: 60;" stylesheets="@SectionWindowCss.css" text="Edit" textFill="#f1f1f2">
+                           <styleClass>
+                              <String fx:value="darkBlue" />
+                              <String fx:value="editBack" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
                </children>
             </AnchorPane>
          </children>

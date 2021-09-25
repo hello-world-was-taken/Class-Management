@@ -102,6 +102,7 @@ public class ScheduleWindowController extends BaseController{
         moveStage(parent, stage);
     }
 
+    // Synchronizes the  
     // handles back button when pressed by going back to the section window.
     @FXML
     void goBack() throws IOException {
